@@ -16,7 +16,7 @@ JOIN country ON city.countrycode = country.code
 GROUP BY country.name
 ORDER BY Total_Cities DESC
 ```
-3. Cantidad de ciudades de México que poseen más de 500.000 habitantes.
+3. Cantidad de ciudades mexicanas que poseen más de 500.000 habitantes.
 ```
 SELECT country.name as Country_Name, COUNT(city.countrycode) AS Total_Cities
 FROM city
